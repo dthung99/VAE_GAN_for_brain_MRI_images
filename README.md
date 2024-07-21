@@ -65,12 +65,14 @@ VAE
 
 + At first, I tried a fully convolutional structure for the decoder, however, it didn't work well:
 
-![loss when trained with a FCN](image/Losses_of_network_with_all_conv.png)
-![result when trained with a FCN](image/Results_of_network_with_all_conv.png)
+![loss when trained with a FCN](images/Losses_of_network_with_all_conv.png)
+
+![result when trained with a FCN](images/Results_of_network_with_all_conv.png)
 
 + This could be explain by the fact that convolutional layers are spatial invariance and could not learn the spatial characteristics. When we look at the KL, it is increased because the decoder could not learn a latent representation that is normally distributed (It need to learn a latent representation that maintains the spatial structures). Thereforem I decided to add a **Multi-Head Attention** layer for the decoder, so the decoder could reconstruct the image from a normally distributed latent image. And IT WORKED MUCH BETTER!!!
 
 ![loss when attention layer added](images/Losses_of_network_with_attention_added.png)
+
 ![result when attention layer added](images/Results_of_network_with_attention.png)
 
 + Trainning of the network is really tricky, as the background accounts for >50% of the pixels. I decided to add a mask and weight the background and foreground differently. Additionally, at the final layer, instead of using a tanh or sigmoid function, I used a ReLU with a custom cut-off that maps every pixels smaller than the background become the background! This change made the VEA results much better!!!
