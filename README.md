@@ -42,14 +42,14 @@ There are three main networks in this projects
 
     + The order of regularisation in all structures are **BatchNorm** -> **Activation** -> **DropOut**
  
-## Result:
+## [Result](https://www.kaggle.com/code/conquyhung/vae-gan-neonatal-mri?scriptVersionId=189228795):
 I achieved the target loss proposed by the lecturers, and successfully generated the required images:
 
-+ For the age regression, the network could predict the fetal age with a mean error of 0.8 week.
++ For the age regression, the network could predict the fetal age with a mean error of 0.7 week.
 
-+ For the VAE network, I achieved a reconstruction loss of 0.001, which is 10 times lower then what is required by the lecturer
++ For the VAE network, I achieved a reconstruction loss of 0.0018, which is 10 times lower then what is required by the lecturer
 
-+ For the VAE-WGAN, adding a discriminator reduced the number of epochs I needed for training the VEA, however, the generated images' visual qualities didn't improve much.
++ For the VAE-WGAN, adding a discriminator significantly reduced the number of epochs I needed for training the VEA: achieved an MSE of 0.0017 after 307 epochs for the VAE-WGAN versus 0.0018 after 371 epochs for the VAE alone. However, the generated images' visual qualities didn't improve much.
 
 ## Some comments:
 
