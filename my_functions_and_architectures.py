@@ -1,3 +1,5 @@
+"""This file contains the architectures and functions that I used in the project (.ipynb notebook)"""
+"""Its purpose is mainly for testing and validating each one seperately"""
 # Import library and set up environment
 # General library
 import os as os
