@@ -51,6 +51,10 @@ I achieved the target loss proposed by the lecturers, and successfully generated
 
 + For the VAE-WGAN, adding a discriminator significantly reduced the number of epochs I needed for training the VEA: achieved an MSE of 0.0017 after 307 epochs for the VAE-WGAN versus 0.0018 after 371 epochs for the VAE alone. However, the generated images' visual qualities didn't improve much.
 
++ A screenshot of the final results:
+
+![Final result](images/Final_result.png)
+
 ## Some comments:
 
 Age regression:
