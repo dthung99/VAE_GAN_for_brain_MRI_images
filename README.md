@@ -42,8 +42,8 @@ There are three main networks in this projects
 
     + The order of regularisation in all structures are **BatchNorm** -> **Activation** -> **DropOut**
  
-## [Result](https://www.kaggle.com/code/conquyhung/vae-gan-neonatal-mri?scriptVersionId=189228795):
-I achieved the target loss proposed by the lecturers, and successfully generated the required images:
+## Result:
+I achieved the target loss proposed by the lecturers, and successfully generated the required images ([Link](https://www.kaggle.com/code/conquyhung/vae-gan-neonatal-mri?scriptVersionId=189228795)):
 
 + For the age regression, the network could predict the fetal age with a mean error of 0.7 week.
 
