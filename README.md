@@ -1,10 +1,10 @@
-# VAE-GAN from scratch to Generate Neonatal Brain Images and Estimate Brain Age
+# VAE-WGAN from scratch to Generate Neonatal Brain Images and Estimate Brain Age
 
-This repository is my coursework for Advanced Machine Learning at King's College London. It consists of creating a VAE-GAN network to meet some predefined target set by the lecturer.
+This repository is my coursework for Advanced Machine Learning at King's College London. It consists of creating a VAE-WGAN network to meet some predefined target set by the lecturer.
 
 ## Aims:
 
-Creating a VAE-GAN network from scratch for generating neonatal brain images and estimate brain age from the features in the latents space.
+Creating a VAE-WGAN network from scratch for generating neonatal brain images and estimate brain age from the features in the latents space.
 
 ## Objectives:
 
@@ -12,7 +12,7 @@ Creating a VAE-GAN network from scratch for generating neonatal brain images and
 
 + Mean square error of reconstruction of VAE network: < 0.01
 
-+ Visual inference of the generated images from the Decoder of VAE-GAN network
++ Visual inference of the generated images from the Decoder of VAE-WGAN network
 
 ## Method:
 
